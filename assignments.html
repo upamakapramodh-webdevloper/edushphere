@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignments | EduSphere LMS</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--======================
+        PRELOADER
+    =======================-->
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!--======================
+        HEADER
+    =======================-->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                EduSphere
+            </a>
+
+            <nav class="navbar">
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="courses.html">Courses</a></li>
+
+                    <li><a href="course-details.html">Course Details</a></li>
+
+                    <li>
+                        <a href="assignments.html" class="active">
+                            Assignments
+                        </a>
+                    </li>
+
+                    <li><a href="quiz.html">Quiz</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--======================
+        PAGE HERO
+    =======================-->
+
+    <section class="page-hero assignment-hero">
+
+        <div class="container hero-grid">
+
+            <div class="hero-content" data-aos="fade-right">
+
+                <span class="section-tag">
+                    Assignment Portal
+                </span>
+
+                <h1>
+                    Complete Your
+                    <span>Assignments</span>
+                    Before Deadline
+                </h1>
+
+                <p>
+
+                    Manage coursework, upload documents, monitor deadlines,
+                    receive instructor feedback, and track your academic
+                    performance through one centralized assignment portal.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#assignments" class="btn btn-primary">
+
+                        View Assignments
+
+                    </a>
+
+                    <a href="#upload" class="btn btn-outline">
+
+                        Upload Work
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h3>52</h3>
+                        <p>Total Tasks</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>36</h3>
+                        <p>Completed</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>8</h3>
+                        <p>Pending</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>94%</h3>
+                        <p>Average Score</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image" data-aos="fade-left">
+
+                <img src="images/assignment-hero.png"
+                    alt="Assignments">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================
+        SEARCH
+    =======================-->
+
+    <section class="assignment-search section">
+
+        <div class="container">
+
+            <div class="search-box" data-aos="zoom-in">
+
+                <input type="text"
+                    placeholder="Search assignments, subjects, faculty...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================
+        QUICK FILTERS
+    =======================-->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>Browse</span>
+
+                <h2>
+                    Assignment Categories
+                </h2>
+
+                <p>
+
+                    Filter assignments according to department,
+                    submission status and priority.
+
+                </p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card" data-aos="fade-up">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>Electrical</h3>
+
+                    <p>12 Assignments</p>
+
+                </div>
+
+                <div class="category-card" data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                    <h3>Programming</h3>
+
+                    <p>10 Assignments</p>
+
+                </div>
+
+                <div class="category-card" data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                    <h3>Embedded</h3>
+
+                    <p>8 Assignments</p>
+
+                </div>
+
+                <div class="category-card" data-aos="fade-up"
+                    data-aos-delay="300">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>Mathematics</h3>
+
+                    <p>9 Assignments</p>
+
+                </div>
+
+                <div class="category-card" data-aos="fade-up"
+                    data-aos-delay="400">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3>Theory</h3>
+
+                    <p>13 Assignments</p>
+
+                </div>
+
+                <div class="category-card" data-aos="fade-up"
+                    data-aos-delay="500">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    <h3>Laboratory</h3>
+
+                    <p>15 Assignments</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================
+        UPCOMING DEADLINES
+    =======================-->
+
+    <section class="deadline-section section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Important</span>
+
+                <h2>
+                    Upcoming Deadlines
+                </h2>
+
+            </div>
+
+            <div class="deadline-grid">
+
+                <div class="deadline-card">
+
+                    <div class="deadline-date">
+
+                        <h2>02</h2>
+
+                        <span>JUL</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Power Systems Assignment</h3>
+
+                        <p>
+
+                            Unit-IV Numerical Problems
+
+                        </p>
+
+                    </div>
+
+                    <span class="deadline-badge urgent">
+
+                        Urgent
+
+                    </span>
+
+                </div>
+
+                <div class="deadline-card">
+
+                    <div class="deadline-date">
+
+                        <h2>05</h2>
+
+                        <span>JUL</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Python Programming</h3>
+
+                        <p>
+
+                            Mini Project Submission
+
+                        </p>
+
+                    </div>
+
+                    <span class="deadline-badge">
+
+                        Upcoming
+
+                    </span>
+
+                </div>
+
+                <div class="deadline-card">
+
+                    <div class="deadline-date">
+
+                        <h2>09</h2>
+
+                        <span>JUL</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Microprocessors</h3>
+
+                        <p>
+
+                            8086 Programming Tasks
+
+                        </p>
+
+                    </div>
+
+                    <span class="deadline-badge">
+
+                        Normal
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======================
+        ASSIGNMENTS START
+    =======================-->
+
+    <section id="assignments" class="assignments section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Assignments</span>
+
+                <h2>
+
+                    Current Coursework
+
+                </h2>
+
+                <p>
+
+                    View pending assignments and submit them before the due date.
+
+                </p>
+
+            </div>
+
+            <div class="assignment-grid">
+                                <!-- =========================
+                     Assignment Card 1
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up">
+
+                    <div class="assignment-top">
+
+                        <span class="subject electrical">
+                            Electrical Engineering
+                        </span>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+                    <h3>Power Systems - Assignment 04</h3>
+
+                    <p>
+
+                        Solve numerical problems related to transmission
+                        line performance and voltage regulation.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            Due : 02 Jul 2026
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Dr. Sharma
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>Completion</span>
+
+                            <span>45%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill" style="width:45%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+                            View
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            Upload
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================
+                     Assignment Card 2
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="assignment-top">
+
+                        <span class="subject programming">
+                            Python
+                        </span>
+
+                        <span class="status completed">
+                            Submitted
+                        </span>
+
+                    </div>
+
+                    <h3>Python Mini Project</h3>
+
+                    <p>
+
+                        Build a Student Record Management
+                        System using Python functions and file handling.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            Submitted
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            95 / 100
+
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>Completed</span>
+
+                            <span>100%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill"
+                                style="width:100%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+
+                            Feedback
+
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Download
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================
+                     Assignment Card 3
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="assignment-top">
+
+                        <span class="subject electronics">
+
+                            Embedded Systems
+
+                        </span>
+
+                        <span class="status ongoing">
+
+                            In Progress
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Arduino Smart Sensor Project
+
+                    </h3>
+
+                    <p>
+
+                        Design an automatic monitoring system using
+                        Arduino UNO and sensors.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            Due : 05 Jul
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            4 Days Left
+
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>
+
+                                Progress
+
+                            </span>
+
+                            <span>
+
+                                72%
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill"
+                                style="width:72%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+
+                            Continue
+
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================
+                     Assignment Card 4
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up">
+
+                    <div class="assignment-top">
+
+                        <span class="subject maths">
+
+                            Mathematics
+
+                        </span>
+
+                        <span class="status pending">
+
+                            Pending
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Numerical Methods
+
+                    </h3>
+
+                    <p>
+
+                        Solve interpolation and differential equation
+                        problems.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            Due : 08 Jul
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            Prof. Rao
+
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>
+
+                                Progress
+
+                            </span>
+
+                            <span>
+
+                                25%
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill"
+                                style="width:25%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+
+                            Start
+
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Download
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================
+                     Assignment Card 5
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="assignment-top">
+
+                        <span class="subject lab">
+
+                            Laboratory
+
+                        </span>
+
+                        <span class="status completed">
+
+                            Submitted
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Digital Electronics Lab
+
+                    </h3>
+
+                    <p>
+
+                        Complete logic gate simulation using Proteus and
+                        submit observation record.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+
+                            <i class="fa-solid fa-award"></i>
+
+                            Grade : A+
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            98%
+
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>
+
+                                Finished
+
+                            </span>
+
+                            <span>
+
+                                100%
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill"
+                                style="width:100%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+
+                            Report
+
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Remarks
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================
+                     Assignment Card 6
+                ========================== -->
+
+                <div class="assignment-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="assignment-top">
+
+                        <span class="subject theory">
+
+                            Theory
+
+                        </span>
+
+                        <span class="status overdue">
+
+                            Overdue
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Microprocessors Assignment
+
+                    </h3>
+
+                    <p>
+
+                        Write ALP programs for sorting,
+                        multiplication and division.
+
+                    </p>
+
+                    <div class="assignment-info">
+
+                        <span>
+
+                            <i class="fa-solid fa-calendar-xmark"></i>
+
+                            Missed Deadline
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            High Priority
+
+                        </span>
+
+                    </div>
+
+                    <div class="progress-box">
+
+                        <div class="progress-title">
+
+                            <span>
+
+                                Progress
+
+                            </span>
+
+                            <span>
+
+                                15%
+
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-fill"
+                                style="width:15%;"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="assignment-buttons">
+
+                        <a href="#" class="btn btn-primary">
+
+                            Resume
+
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Contact Faculty
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--==================================
+        UPLOAD ASSIGNMENT SECTION
+    ===================================-->
+
+    <section id="upload" class="upload-section section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>Submission Portal</span>
+
+                <h2>Upload Your Assignment</h2>
+
+                <p>
+                    Submit your assignments securely before the deadline.
+                    Supported formats include PDF, DOCX, ZIP and PPT.
+                </p>
+
+            </div>
+
+            <div class="upload-wrapper">
+
+                <!-- Upload Card -->
+
+                <div class="upload-card" data-aos="fade-right">
+
+                    <div class="upload-icon">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    </div>
+
+                    <h3>Drag & Drop Files</h3>
+
+                    <p>
+
+                        Click below or drag your assignment file into
+                        the upload area.
+
+                    </p>
+
+                    <form class="upload-form">
+
+                        <input type="file"
+                            id="assignmentFile"
+                            multiple>
+
+                        <label for="assignmentFile"
+                            class="upload-btn">
+
+                            <i class="fa-solid fa-folder-open"></i>
+
+                            Choose Files
+
+                        </label>
+
+                        <button type="submit"
+                            class="btn btn-primary">
+
+                            Upload Assignment
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Details -->
+
+                <div class="upload-details"
+                    data-aos="fade-left">
+
+                    <div class="detail-box">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        <div>
+
+                            <h4>Accepted Formats</h4>
+
+                            <p>
+
+                                PDF, DOCX, ZIP,
+                                PPTX, XLSX
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <i class="fa-solid fa-weight-hanging"></i>
+
+                        <div>
+
+                            <h4>Maximum File Size</h4>
+
+                            <p>
+
+                                50 MB per Assignment
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+
+                            <h4>Submission Time</h4>
+
+                            <p>
+
+                                Before 11:59 PM
+                                on Due Date
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <div>
+
+                            <h4>Secure Upload</h4>
+
+                            <p>
+
+                                Files are encrypted
+                                and stored safely.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        SUBMISSION GUIDELINES
+    ===================================-->
+
+    <section class="guidelines section">
+
+        <div class="container">
+
+            <div class="section-title"
+                data-aos="fade-up">
+
+                <span>Instructions</span>
+
+                <h2>
+
+                    Assignment Submission Guidelines
+
+                </h2>
+
+            </div>
+
+            <div class="guideline-grid">
+
+                <div class="guide-card"
+                    data-aos="zoom-in">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <h3>
+
+                        Use Correct Format
+
+                    </h3>
+
+                    <p>
+
+                        Upload assignments only in the
+                        required format specified by the faculty.
+
+                    </p>
+
+                </div>
+
+                <div class="guide-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <h3>
+
+                        Mention Student Details
+
+                    </h3>
+
+                    <p>
+
+                        Include Name, Roll Number,
+                        Branch and Subject on the first page.
+
+                    </p>
+
+                </div>
+
+                <div class="guide-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="200">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <h3>
+
+                        Submit Before Deadline
+
+                    </h3>
+
+                    <p>
+
+                        Late submissions may attract
+                        penalty marks or rejection.
+
+                    </p>
+
+                </div>
+
+                <div class="guide-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300">
+
+                    <i class="fa-solid fa-ban"></i>
+
+                    <h3>
+
+                        Avoid Plagiarism
+
+                    </h3>
+
+                    <p>
+
+                        Original work is mandatory.
+                        Plagiarism may lead to zero marks.
+
+                    </p>
+
+                </div>
+
+                <div class="guide-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="400">
+
+                    <i class="fa-solid fa-file-signature"></i>
+
+                    <h3>
+
+                        Verify Before Upload
+
+                    </h3>
+
+                    <p>
+
+                        Double-check your files before
+                        final submission.
+
+                    </p>
+
+                </div>
+
+                <div class="guide-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="500">
+
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+
+                    <h3>
+
+                        Confirmation Receipt
+
+                    </h3>
+
+                    <p>
+
+                        Save the submission receipt
+                        for future reference.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        RECENT SUBMISSIONS
+    ===================================-->
+
+    <section class="recent-submissions section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>History</span>
+
+                <h2>
+
+                    Recently Submitted Assignments
+
+                </h2>
+
+            </div>
+
+            <div class="submission-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+                            <th>Faculty</th>
+                            <th>Submitted</th>
+                            <th>Status</th>
+                            <th>Marks</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Python Programming</td>
+
+                            <td>Dr. Kumar</td>
+
+                            <td>28 Jun 2026</td>
+
+                            <td>
+
+                                <span class="status completed">
+
+                                    Verified
+
+                                </span>
+
+                            </td>
+
+                            <td>95</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Digital Electronics Lab</td>
+
+                            <td>Prof. Rao</td>
+
+                            <td>26 Jun 2026</td>
+
+                            <td>
+
+                                <span class="status completed">
+
+                                    Evaluated
+
+                                </span>
+
+                            </td>
+
+                            <td>98</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Electrical Machines</td>
+
+                            <td>Dr. Singh</td>
+
+                            <td>24 Jun 2026</td>
+
+                            <td>
+
+                                <span class="status completed">
+
+                                    Checked
+
+                                </span>
+
+                            </td>
+
+                            <td>92</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Engineering Mathematics</td>
+
+                            <td>Prof. Sharma</td>
+
+                            <td>20 Jun 2026</td>
+
+                            <td>
+
+                                <span class="status completed">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                            <td>90</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--==================================
+        ASSIGNMENT STATISTICS
+    ===================================-->
+
+    <section class="assignment-stats section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>Performance</span>
+
+                <h2>Your Assignment Statistics</h2>
+
+                <p>
+                    Track your overall submission performance and academic
+                    progress throughout the semester.
+                </p>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card" data-aos="zoom-in">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <h3>52</h3>
+                    <p>Total Assignments</p>
+                </div>
+
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>44</h3>
+                    <p>Submitted</p>
+                </div>
+
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <h3>6</h3>
+                    <p>Pending</p>
+                </div>
+
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>94%</h3>
+                    <p>Average Score</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        ASSIGNMENT TIMELINE
+    ===================================-->
+
+    <section class="timeline section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>Schedule</span>
+
+                <h2>Assignment Timeline</h2>
+
+            </div>
+
+            <div class="timeline-wrapper">
+
+                <div class="timeline-item" data-aos="fade-right">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Assignment Published</h3>
+
+                        <p>
+                            Faculty uploads assignment with instructions and
+                            deadline.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Student Submission</h3>
+
+                        <p>
+                            Students complete and upload assignments through
+                            the LMS portal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Faculty Evaluation</h3>
+
+                        <p>
+                            Faculty reviews assignments, provides feedback,
+                            and awards marks.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Performance Updated</h3>
+
+                        <p>
+                            Dashboard is updated with marks, remarks, and
+                            overall progress.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        FAQ
+    ===================================-->
+
+    <section class="faq section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Help Center</span>
+
+                <h2>Frequently Asked Questions</h2>
+
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <h3>
+                        Can I upload multiple files?
+                    </h3>
+
+                    <p>
+                        Yes. You can upload multiple files if the assignment
+                        allows multiple attachments.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        Can I edit my submission?
+                    </h3>
+
+                    <p>
+                        Yes, until the submission deadline. After the deadline,
+                        editing is disabled automatically.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        How do I know my upload is successful?
+                    </h3>
+
+                    <p>
+                        A confirmation message and submission receipt will be
+                        displayed immediately after successful upload.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        Where can I view faculty feedback?
+                    </h3>
+
+                    <p>
+                        Feedback will appear in your Dashboard and Profile after
+                        evaluation is completed.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        CTA
+    ===================================-->
+
+    <section class="cta section">
+
+        <div class="container">
+
+            <div class="cta-box" data-aos="zoom-in">
+
+                <h2>
+                    Don't Miss Your Next Deadline!
+                </h2>
+
+                <p>
+
+                    Stay organized, complete assignments on time, and improve
+                    your academic performance with EduSphere LMS.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="dashboard.html"
+                        class="btn btn-primary">
+
+                        Go to Dashboard
+
+                    </a>
+
+                    <a href="courses.html"
+                        class="btn btn-outline">
+
+                        Browse Courses
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==================================
+        FOOTER
+    ===================================-->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>EduSphere LMS</h3>
+
+                    <p>
+
+                        A modern Learning Management System designed to help
+                        students learn, submit assignments, take quizzes,
+                        and monitor academic progress efficiently.
+
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="courses.html">Courses</a></li>
+
+                        <li><a href="quiz.html">Quiz</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3>Student Services</h3>
+
+                    <ul>
+
+                        <li><a href="#">Assignments</a></li>
+
+                        <li><a href="#">Results</a></li>
+
+                        <li><a href="#">Attendance</a></li>
+
+                        <li><a href="#">Certificates</a></li>
+
+                        <li><a href="#">Support</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3>Newsletter</h3>
+
+                    <p>
+
+                        Subscribe to receive assignment reminders and
+                        academic updates.
+
+                    </p>
+
+                    <form class="newsletter">
+
+                        <input type="email"
+                            placeholder="Enter your email">
+
+                        <button type="submit">
+
+                            Subscribe
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 EduSphere LMS. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--==================================
+        SCRIPTS
+    ===================================-->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

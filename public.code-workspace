@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../seee-website/public"
+		},
+		{
+			"path": "../seee-website/src"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "public"
+	}
+}

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | EduSphere LMS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+        HEADER
+========================== -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>EduSphere</span>
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="courses.html">Courses</a></li>
+
+                <li><a href="assignments.html">Assignments</a></li>
+
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="profile.html">Profile</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <button id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- =========================
+        PAGE HERO
+========================== -->
+
+<section class="page-hero quiz-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                Test Your Knowledge
+            </span>
+
+            <h1>
+                Interactive
+                <span>Quiz Portal</span>
+            </h1>
+
+            <p>
+                Challenge yourself with carefully designed quizzes,
+                improve your understanding, track your scores,
+                and strengthen your learning journey.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+      QUIZ CATEGORY SECTION
+========================== -->
+
+<section class="quiz-category-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Select Quiz Category</h2>
+
+            <p>
+                Choose your favorite subject and begin the assessment.
+            </p>
+
+        </div>
+
+        <div class="quiz-category-grid">
+
+            <!-- Card 1 -->
+
+            <div class="quiz-category-card">
+
+                <div class="quiz-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    HTML, CSS, JavaScript,
+                    Responsive Design,
+                    DOM & APIs.
+                </p>
+
+                <ul>
+
+                    <li>20 Questions</li>
+
+                    <li>20 Minutes</li>
+
+                    <li>Beginner Level</li>
+
+                </ul>
+
+                <button class="primary-btn startQuizBtn">
+                    Start Quiz
+                </button>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="quiz-category-card">
+
+                <div class="quiz-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+
+                <h3>Programming</h3>
+
+                <p>
+                    C Programming,
+                    Python,
+                    Java,
+                    Data Structures.
+                </p>
+
+                <ul>
+
+                    <li>25 Questions</li>
+
+                    <li>25 Minutes</li>
+
+                    <li>Intermediate</li>
+
+                </ul>
+
+                <button class="primary-btn startQuizBtn">
+                    Start Quiz
+                </button>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="quiz-category-card">
+
+                <div class="quiz-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+
+                <h3>Electrical Engineering</h3>
+
+                <p>
+                    Machines,
+                    Power Systems,
+                    Networks,
+                    Measurements.
+                </p>
+
+                <ul>
+
+                    <li>20 Questions</li>
+
+                    <li>20 Minutes</li>
+
+                    <li>Intermediate</li>
+
+                </ul>
+
+                <button class="primary-btn startQuizBtn">
+                    Start Quiz
+                </button>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="quiz-category-card">
+
+                <div class="quiz-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+
+                <h3>Aptitude</h3>
+
+                <p>
+                    Quantitative,
+                    Logical,
+                    Verbal,
+                    Analytical Reasoning.
+                </p>
+
+                <ul>
+
+                    <li>30 Questions</li>
+
+                    <li>30 Minutes</li>
+
+                    <li>Placement Level</li>
+
+                </ul>
+
+                <button class="primary-btn startQuizBtn">
+                    Start Quiz
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+       QUIZ INSTRUCTIONS
+========================== -->
+
+<section class="quiz-instructions">
+
+    <div class="container">
+
+        <div class="instructions-box">
+
+            <div class="instruction-heading">
+
+                <i class="fas fa-circle-info"></i>
+
+                <h2>Quiz Instructions</h2>
+
+            </div>
+
+            <div class="instruction-list">
+
+                <div class="instruction-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <p>
+                        Each question carries one mark.
+                    </p>
+
+                </div>
+
+                <div class="instruction-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <p>
+                        No negative marking for incorrect answers.
+                    </p>
+
+                </div>
+
+                <div class="instruction-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <p>
+                        Complete the quiz within the allotted time.
+                    </p>
+
+                </div>
+
+                <div class="instruction-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <p>
+                        Click "Next" to move to the following question.
+                    </p>
+
+                </div>
+
+                <div class="instruction-item">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <p>
+                        Your result will be displayed immediately after submission.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="instruction-btn">
+
+                <button class="primary-btn" id="beginQuiz">
+                    Begin Assessment
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+      QUIZ CONTAINER STARTS
+      (Continue in Part-2A)
+========================== -->
+
+<section class="quiz-container" id="quizContainer">
+        <div class="container">
+
+        <!-- =========================
+                QUIZ HEADER
+        ========================== -->
+
+        <div class="quiz-header">
+
+            <div class="quiz-header-left">
+
+                <h2>Web Development Quiz</h2>
+
+                <p>
+                    Answer all questions before the timer ends.
+                </p>
+
+            </div>
+
+            <div class="quiz-header-right">
+
+                <div class="quiz-timer">
+
+                    <i class="fas fa-clock"></i>
+
+                    <span id="timer">
+                        20:00
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                PROGRESS BAR
+        ========================== -->
+
+        <div class="quiz-progress-area">
+
+            <div class="progress-info">
+
+                <span>
+                    Question
+                    <strong id="currentQuestion">
+                        1
+                    </strong>
+                    /
+                    <strong id="totalQuestions">
+                        20
+                    </strong>
+                </span>
+
+                <span id="progressPercent">
+                    5%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill"
+                    id="progressFill"
+                    style="width:5%;">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                QUESTION CARD
+        ========================== -->
+
+        <div class="quiz-card">
+
+            <div class="question-number">
+
+                Question 1
+
+            </div>
+
+            <h3 id="questionText">
+
+                Which HTML tag is used to create a hyperlink?
+
+            </h3>
+
+            <!-- =========================
+                    OPTIONS
+            ========================== -->
+
+            <div class="options-list">
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="A">
+
+                    <span class="option-letter">
+                        A
+                    </span>
+
+                    <span class="option-text">
+                        &lt;img&gt;
+                    </span>
+
+                </label>
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="B">
+
+                    <span class="option-letter">
+                        B
+                    </span>
+
+                    <span class="option-text">
+                        &lt;a&gt;
+                    </span>
+
+                </label>
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="C">
+
+                    <span class="option-letter">
+                        C
+                    </span>
+
+                    <span class="option-text">
+                        &lt;table&gt;
+                    </span>
+
+                </label>
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="D">
+
+                    <span class="option-letter">
+                        D
+                    </span>
+
+                    <span class="option-text">
+                        &lt;link&gt;
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                QUESTION PALETTE
+        ========================== -->
+
+        <div class="question-palette">
+
+            <h3>
+
+                Question Navigator
+
+            </h3>
+
+            <div class="palette-grid">
+
+                <button class="palette-btn active">
+                    1
+                </button>
+
+                <button class="palette-btn">
+                    2
+                </button>
+
+                <button class="palette-btn">
+                    3
+                </button>
+
+                <button class="palette-btn">
+                    4
+                </button>
+
+                <button class="palette-btn">
+                    5
+                </button>
+
+                <button class="palette-btn">
+                    6
+                </button>
+
+                <button class="palette-btn">
+                    7
+                </button>
+
+                <button class="palette-btn">
+                    8
+                </button>
+
+                <button class="palette-btn">
+                    9
+                </button>
+
+                <button class="palette-btn">
+                    10
+                </button>
+
+                <button class="palette-btn">
+                    11
+                </button>
+
+                <button class="palette-btn">
+                    12
+                </button>
+
+                <button class="palette-btn">
+                    13
+                </button>
+
+                <button class="palette-btn">
+                    14
+                </button>
+
+                <button class="palette-btn">
+                    15
+                </button>
+
+                <button class="palette-btn">
+                    16
+                </button>
+
+                <button class="palette-btn">
+                    17
+                </button>
+
+                <button class="palette-btn">
+                    18
+                </button>
+
+                <button class="palette-btn">
+                    19
+                </button>
+
+                <button class="palette-btn">
+                    20
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                QUIZ CONTROLS
+        ========================== -->
+
+        <div class="quiz-controls">
+
+            <button
+                class="secondary-btn"
+                id="previousBtn">
+
+                <i class="fas fa-arrow-left"></i>
+
+                Previous
+
+            </button>
+
+            <button
+                class="primary-btn"
+                id="nextBtn">
+
+                Next
+
+                <i class="fas fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+        <!-- =========================
+                SUBMIT BUTTON
+        ========================== -->
+
+        <div class="submit-area">
+
+            <button
+                class="submit-btn"
+                id="submitQuiz">
+
+                <i class="fas fa-paper-plane"></i>
+
+                Submit Quiz
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        RESULT SECTION
+        (Continue in Part-2B)
+========================== -->
+
+<section
+class="quiz-result"
+id="quizResult">
+    <div class="container">
+
+        <!-- =========================
+                RESULT HEADER
+        ========================== -->
+
+        <div class="result-card">
+
+            <div class="result-top">
+
+                <div class="result-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+
+                <h2>Quiz Completed!</h2>
+
+                <p>
+                    Congratulations! You have successfully completed the assessment.
+                    Your performance summary is shown below.
+                </p>
+
+            </div>
+
+            <!-- =========================
+                    SCORE CIRCLE
+            ========================== -->
+
+            <div class="score-circle">
+
+                <div class="score-inner">
+
+                    <h1 id="finalScore">
+                        18
+                    </h1>
+
+                    <span>/20</span>
+
+                </div>
+
+            </div>
+
+            <!-- =========================
+                    PERFORMANCE MESSAGE
+            ========================== -->
+
+            <div class="performance-message">
+
+                <h3 id="performanceText">
+                    Excellent Performance 🎉
+                </h3>
+
+                <p>
+                    You demonstrated a strong understanding of the subject.
+                    Keep practicing to achieve even better results.
+                </p>
+
+            </div>
+
+            <!-- =========================
+                    RESULT STATS
+            ========================== -->
+
+            <div class="result-stats">
+
+                <div class="stat-box">
+
+                    <i class="fas fa-check-circle"></i>
+
+                    <h4 id="correctAnswers">
+                        18
+                    </h4>
+
+                    <p>Correct</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <i class="fas fa-times-circle"></i>
+
+                    <h4 id="wrongAnswers">
+                        2
+                    </h4>
+
+                    <p>Wrong</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <i class="fas fa-percent"></i>
+
+                    <h4 id="accuracy">
+                        90%
+                    </h4>
+
+                    <p>Accuracy</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <i class="fas fa-clock"></i>
+
+                    <h4 id="timeTaken">
+                        14m
+                    </h4>
+
+                    <p>Time Taken</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                ANSWER SUMMARY
+        ========================== -->
+
+        <div class="summary-card">
+
+            <h2>Answer Summary</h2>
+
+            <p>
+                Review the status of all attempted questions.
+            </p>
+
+            <div class="summary-grid">
+
+                <div class="summary-item correct">
+
+                    <span>Q1</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q2</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item wrong">
+
+                    <span>Q3</span>
+
+                    <i class="fas fa-times"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q4</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q5</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q6</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q7</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item wrong">
+
+                    <span>Q8</span>
+
+                    <i class="fas fa-times"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q9</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q10</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q11</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q12</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q13</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q14</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q15</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q16</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q17</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q18</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q19</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+                <div class="summary-item correct">
+
+                    <span>Q20</span>
+
+                    <i class="fas fa-check"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+                RESULT ACTIONS
+        ========================== -->
+
+        <div class="result-actions">
+
+            <a href="quiz.html" class="primary-btn">
+                <i class="fas fa-rotate-right"></i>
+                Retry Quiz
+            </a>
+
+            <a href="dashboard.html" class="secondary-btn">
+                <i class="fas fa-chart-line"></i>
+                Student Dashboard
+            </a>
+
+            <a href="courses.html" class="secondary-btn">
+                <i class="fas fa-book-open"></i>
+                Explore Courses
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+        FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Column 1 -->
+
+            <div class="footer-column">
+
+                <a href="index.html" class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduSphere</span>
+                </a>
+
+                <p>
+                    EduSphere is a modern Learning Management System
+                    designed to help students learn smarter through
+                    interactive courses, quizzes, assignments and
+                    personalized dashboards.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="courses.html">Courses</a></li>
+
+                    <li><a href="assignments.html">Assignments</a></li>
+
+                    <li><a href="quiz.html">Quiz</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div class="footer-column">
+
+                <h3>Student</h3>
+
+                <ul>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <li><a href="#">Certificates</a></li>
+
+                    <li><a href="#">Learning Progress</a></li>
+
+                    <li><a href="#">Achievements</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div class="footer-column">
+
+                <h3>Newsletter</h3>
+
+                <p>
+                    Subscribe to receive the latest course updates,
+                    announcements and learning resources.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 EduSphere LMS.
+                All Rights Reserved.
+
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms & Conditions</a>
+
+                <a href="#">Support</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================
+        BACK TO TOP
+========================== -->
+
+<button id="backToTop" class="back-to-top">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================
+        SCRIPT
+========================== -->
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

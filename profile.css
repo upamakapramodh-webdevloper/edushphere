@@ -1,0 +1,953 @@
+/*==================================================
+            PROFILE PAGE - HERO SECTION
+==================================================*/
+
+.profile-hero{
+    width:100%;
+    background:#f5f7fb;
+    margin-top:80px;
+    overflow:hidden;
+}
+
+.profile-cover{
+    width:100%;
+    height:280px;
+    overflow:hidden;
+}
+
+.profile-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profile-info{
+    max-width:1200px;
+    margin:auto;
+    padding:0 40px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    position:relative;
+    margin-top:-70px;
+    flex-wrap:wrap;
+}
+
+.profile-image{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid #fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    background:#fff;
+}
+
+.profile-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profile-details{
+    flex:1;
+    margin-left:30px;
+    padding-bottom:20px;
+}
+
+.profile-details h1{
+    font-size:2rem;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.profile-details p{
+    color:#666;
+    font-size:1rem;
+    margin-bottom:18px;
+}
+
+.profile-badges{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.profile-badges span{
+    background:#4f46e5;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:.85rem;
+    font-weight:500;
+}
+
+.edit-btn{
+    padding:14px 28px;
+    border:none;
+    outline:none;
+    background:#4f46e5;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+    margin-bottom:20px;
+}
+
+.edit-btn i{
+    margin-right:8px;
+}
+
+.edit-btn:hover{
+    background:#372fcf;
+    transform:translateY(-3px);
+}
+
+/*==================================================
+            MAIN PROFILE LAYOUT
+==================================================*/
+
+.profile-container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 30px;
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:35px;
+}
+
+.profile-left,
+.profile-right{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+/*==================================================
+                PROFILE CARD
+==================================================*/
+
+.profile-card{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.profile-card:hover{
+    transform:translateY(-5px);
+}
+
+.profile-card h2{
+    font-size:1.4rem;
+    margin-bottom:25px;
+    color:#222;
+    position:relative;
+    padding-bottom:10px;
+}
+
+.profile-card h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:70px;
+    height:4px;
+    background:#4f46e5;
+    border-radius:10px;
+}
+
+/*==================================================
+            PERSONAL INFORMATION
+==================================================*/
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:24px;
+}
+
+.info-item:last-child{
+    margin-bottom:0;
+}
+
+.info-item i{
+    width:55px;
+    height:55px;
+    background:#eef2ff;
+    color:#4f46e5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:1.2rem;
+}
+
+.info-item h4{
+    font-size:1rem;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.info-item p{
+    color:#666;
+    font-size:.95rem;
+}
+
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+.profile-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:.96rem;
+}
+/*==================================================
+                SKILLS SECTION
+==================================================*/
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill:last-child{
+    margin-bottom:0;
+}
+
+.skill span{
+    display:block;
+    font-size:0.95rem;
+    font-weight:600;
+    color:#333;
+    margin-bottom:10px;
+}
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#e5e7eb;
+    border-radius:50px;
+    overflow:hidden;
+    position:relative;
+}
+
+.progress-bar{
+    height:100%;
+    border-radius:50px;
+    background:linear-gradient(90deg,#4f46e5,#7c3aed);
+    animation:fillBar 2s ease;
+}
+
+/* Skill Widths */
+
+.progress-bar.html{
+    width:95%;
+}
+
+.progress-bar.css{
+    width:90%;
+}
+
+.progress-bar.js{
+    width:85%;
+}
+
+.progress-bar.python{
+    width:80%;
+}
+
+/* Progress Animation */
+
+@keyframes fillBar{
+
+    from{
+        width:0;
+    }
+
+}
+
+/*==================================================
+            LEARNING STATISTICS
+==================================================*/
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.stat-box{
+    background:#f8fafc;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    transition:0.3s;
+    border:1px solid #e5e7eb;
+}
+
+.stat-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    background:#ffffff;
+}
+
+.stat-box h3{
+    font-size:2rem;
+    color:#4f46e5;
+    margin-bottom:8px;
+    font-weight:700;
+}
+
+.stat-box p{
+    color:#666;
+    font-size:0.95rem;
+    margin:0;
+}
+
+/*==================================================
+                ACHIEVEMENTS
+==================================================*/
+
+.achievement{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:18px;
+    background:#f9fafb;
+    transition:0.3s;
+}
+
+.achievement:last-child{
+    margin-bottom:0;
+}
+
+.achievement:hover{
+    transform:translateX(8px);
+    background:#eef2ff;
+}
+
+.achievement i{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#4f46e5;
+    color:#fff;
+    font-size:1.3rem;
+    flex-shrink:0;
+}
+
+.achievement h4{
+    font-size:1rem;
+    color:#222;
+    margin-bottom:6px;
+}
+
+.achievement p{
+    color:#666;
+    font-size:0.92rem;
+    line-height:1.6;
+}
+
+/*==================================================
+                COMMON ANIMATIONS
+==================================================*/
+
+.profile-card,
+.stat-box,
+.achievement{
+    transition:all .3s ease;
+}
+
+.profile-card:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+/* Smooth icon animation */
+
+.info-item i,
+.achievement i{
+    transition:transform .3s ease;
+}
+
+.info-item:hover i,
+.achievement:hover i{
+    transform:scale(1.1) rotate(5deg);
+}
+
+/*==================================================
+            SMALL SCREEN IMPROVEMENTS
+==================================================*/
+
+@media (max-width:768px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .achievement{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .achievement i{
+        margin-bottom:10px;
+    }
+
+}
+/*==================================================
+            RECENT ACTIVITY
+==================================================*/
+
+.activity-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.activity-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:18px;
+    background:#f8fafc;
+    border-radius:15px;
+    transition:0.3s;
+    border:1px solid #e5e7eb;
+}
+
+.activity-item:hover{
+    transform:translateX(8px);
+    background:#eef2ff;
+}
+
+.activity-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#4f46e5;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.2rem;
+    flex-shrink:0;
+}
+
+.activity-content{
+    flex:1;
+}
+
+.activity-content h4{
+    font-size:1rem;
+    color:#222;
+    margin-bottom:6px;
+}
+
+.activity-content p{
+    color:#666;
+    font-size:0.93rem;
+    margin-bottom:8px;
+    line-height:1.6;
+}
+
+.activity-content span{
+    font-size:0.85rem;
+    color:#4f46e5;
+    font-weight:600;
+}
+
+/*==================================================
+                CERTIFICATES
+==================================================*/
+
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.certificate-card{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:30px 20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.certificate-card i{
+    font-size:3rem;
+    color:#f59e0b;
+    margin-bottom:18px;
+}
+
+.certificate-card h3{
+    color:#222;
+    margin-bottom:10px;
+    font-size:1.1rem;
+}
+
+.certificate-card p{
+    color:#666;
+    font-size:0.92rem;
+    margin-bottom:20px;
+}
+
+.certificate-card button{
+    padding:10px 22px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#4f46e5;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.certificate-card button:hover{
+    background:#372fcf;
+}
+
+/*==================================================
+            ENROLLED COURSES TABLE
+==================================================*/
+
+.course-table{
+    overflow-x:auto;
+}
+
+.course-table table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:650px;
+}
+
+.course-table thead{
+    background:#4f46e5;
+    color:#fff;
+}
+
+.course-table th{
+    padding:16px;
+    text-align:left;
+    font-size:.95rem;
+    font-weight:600;
+}
+
+.course-table td{
+    padding:16px;
+    border-bottom:1px solid #e5e7eb;
+    color:#444;
+    font-size:.94rem;
+}
+
+.course-table tbody tr{
+    transition:.3s;
+}
+
+.course-table tbody tr:hover{
+    background:#f5f7ff;
+}
+
+/*==================================================
+                STATUS BADGES
+==================================================*/
+
+.completed,
+.ongoing,
+.pending{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:.82rem;
+    font-weight:600;
+}
+
+.completed{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.ongoing{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+/*==================================================
+            TABLE RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .course-table{
+        overflow-x:auto;
+    }
+
+    .course-table table{
+        min-width:650px;
+    }
+
+    .certificate-grid{
+        grid-template-columns:1fr;
+    }
+
+    .activity-item{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .activity-icon{
+        margin-bottom:10px;
+    }
+
+}
+/*==================================================
+            ACCOUNT SETTINGS FORM
+==================================================*/
+
+.settings-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-box label{
+    font-size:.95rem;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:.95rem;
+    outline:none;
+    transition:.3s;
+    background:#fff;
+}
+
+.input-box input:focus{
+    border-color:#4f46e5;
+    box-shadow:0 0 0 4px rgba(79,70,229,.12);
+}
+
+.save-btn{
+    align-self:flex-start;
+    padding:14px 30px;
+    background:#4f46e5;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#3730a3;
+    transform:translateY(-3px);
+}
+
+/*==================================================
+        NOTIFICATION PREFERENCES
+==================================================*/
+
+.notification-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #ececec;
+}
+
+.notification-item:last-child{
+    border-bottom:none;
+}
+
+.notification-item span{
+    color:#333;
+    font-weight:500;
+}
+
+/* Toggle Switch */
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:58px;
+    height:30px;
+}
+
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#cbd5e1;
+    transition:.4s;
+    border-radius:30px;
+}
+
+.slider:before{
+    content:"";
+    position:absolute;
+    height:22px;
+    width:22px;
+    left:4px;
+    bottom:4px;
+    background:#fff;
+    transition:.4s;
+    border-radius:50%;
+}
+
+.switch input:checked + .slider{
+    background:#4f46e5;
+}
+
+.switch input:checked + .slider:before{
+    transform:translateX(28px);
+}
+
+/*==================================================
+                FOOTER
+==================================================*/
+
+footer{
+    background:#111827;
+    color:#fff;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-content h3{
+    margin-bottom:18px;
+    color:#fff;
+}
+
+.footer-content p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.footer-content ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-content ul li{
+    margin-bottom:12px;
+}
+
+.footer-content ul li a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-content ul li a:hover{
+    color:#fff;
+    padding-left:6px;
+}
+
+.social-links{
+    display:flex;
+    gap:15px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#1f2937;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social-links a:hover{
+    background:#4f46e5;
+    transform:translateY(-5px);
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#d1d5db;
+}
+
+/*==================================================
+            RESPONSIVE DESIGN
+==================================================*/
+
+@media(max-width:992px){
+
+    .profile-container{
+        grid-template-columns:1fr;
+    }
+
+    .profile-info{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .profile-details{
+        margin-left:0;
+        margin-top:20px;
+        padding-bottom:15px;
+    }
+
+    .profile-badges{
+        justify-content:center;
+    }
+
+    .edit-btn{
+        margin-top:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .profile-cover{
+        height:200px;
+    }
+
+    .profile-image{
+        width:130px;
+        height:130px;
+    }
+
+    .profile-details h1{
+        font-size:1.6rem;
+    }
+
+    .profile-container{
+        padding:0 20px;
+    }
+
+    .profile-card{
+        padding:22px;
+    }
+
+    .save-btn{
+        width:100%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .profile-cover{
+        height:160px;
+    }
+
+    .profile-image{
+        width:110px;
+        height:110px;
+    }
+
+    .profile-details h1{
+        font-size:1.3rem;
+    }
+
+    .profile-details p{
+        font-size:.9rem;
+    }
+
+    .profile-badges span{
+        font-size:.75rem;
+        padding:6px 12px;
+    }
+
+    .profile-card{
+        padding:18px;
+    }
+
+    .footer-content{
+        text-align:center;
+    }
+
+    .social-links{
+        justify-content:center;
+    }
+
+}
+
+/*==================================================
+            SMOOTH ANIMATION
+==================================================*/
+
+.profile-card,
+.certificate-card,
+.stat-box,
+.activity-item,
+.achievement{
+    animation:fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
